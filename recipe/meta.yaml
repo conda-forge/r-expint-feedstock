@@ -1,4 +1,4 @@
-{% set version = "0.2-0" %}
+{% set version = "0.2-1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/expint_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/expint/expint_{{ version }}.tar.gz
-  sha256: 9cdfcf21e91b8cf731ca87d13272068d56b1ccd8fe04bd4f373fc722519a753e
+  sha256: 1285dffcea822a5d8d65aca464783ce25d21bff4da00687f817efc205d249fda
 
 build:
   number: 0
@@ -41,8 +41,8 @@ test:
 about:
   home: https://gitlab.com/vigou3/expint
   license: GPL-2.0-or-later
-  summary: The exponential integrals E_1(x), E_2(x), E_n(x) and Ei(x), and the incomplete gamma function G(a, x) defined for negative values of its first argument. The package also gives easy access to the underlying C routines through an API; see the package vignette for details. A test package included in sub-directory
-    example_API provides an implementation. C routines derived from the GNU Scientific Library <https://www.gnu.org/software/gsl/>.
+  summary: The exponential integrals E_1(x), E_2(x), E_n(x) and Ei(x), and the incomplete gamma function G(a, x) defined for negative values of its first argument. The package also gives easy access to the underlying C routines through an API; see the package vignette for details. A test package included in 
+    sub-directory example_API provides an implementation. C routines derived from the GNU Scientific Library <https://www.gnu.org/software/gsl/>.
   license_family: GPL-2
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
